@@ -1,0 +1,21 @@
+{
+  "name": "adventjs",
+  "version": "1.0.0",
+  "description": "Code written for AdventJS",
+  "author": "Cristóbal Gajardo Vera (cristobalgajardo.v@gmail.com)",
+  "type": "module",
+  "license": "ISC",
+  "scripts": {
+    "challenge:create": "CHALLENGE_NAME=${npm_config_name} npm run typescript -- scripts/create-challenge.ts",
+    "challenge:run": "CHALLENGE_NAME=${npm_config_name} npm run typescript -- --watch src/index.ts",
+    "typescript": "node --experimental-strip-types"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1"
+  },
+  "packageManager": "npm@10.9.1",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  }
+}
